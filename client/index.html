@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <!-- Vendor stylesheets -->
-  
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <!-- Application stylesheets -->
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-app="blackjack">
+  
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#/profile">Profile</a></li>
+    <li role="presentation"><a href="#/game">Game</a></li>
+  </ul>
   
   <div ng-view></div>
   
@@ -21,5 +26,11 @@
   <script src="app.js"></script>
   <script src="modules/main/main.js"></script>
   <script src="modules/main/mainController.js"></script>
+  
+  <script src="modules/game/game.js"></script>
+  <script src="modules/game/gameController.js"></script>
+  
+  <script src="modules/profile/profile.js"></script>
+  <script src="modules/profile/profileController.js"></script>
 </body>
 </html>
